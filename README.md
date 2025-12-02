@@ -141,7 +141,8 @@ if end - start > 30:
 
 📌 *Основные поля конфига*
 
-<img width="1629" height="292" alt="image" src="https://github.com/user-attachments/assets/4f5d7d91-2777-49d3-8c65-c5bf44624213" />
+<img width="1629" height="292" alt="image" src="https://github.com/user-attachments/assets/0c256028-ea63-4876-80aa-97f643f7128d" />
+
 
 
 config.json управляет поведением ассистента, форматом уроков и настройками голосовой сессии. При запуске программы параметры автоматически загружаются и определяют, как бот будет вести урок.
@@ -415,7 +416,8 @@ All parameters are loaded at startup and define:
 
 📌 **Main config fields**
 
-<img width="1629" height="292" alt="image" src="https://github.com/user-attachments/assets/4f5d7d91-2777-49d3-8c65-c5bf44624213" />
+<img width="1629" height="292" alt="image" src="https://github.com/user-attachments/assets/b885d532-849f-4030-b7c1-a1ccf5423b0c" />
+
 
  • bot_type – LLM provider identifier
  
