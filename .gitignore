@@ -1,23 +1,29 @@
-# Environment variables
+#  Secrets & environment
 .env
+*.env
 
-# Vosk acoustic models (large binary files)
+#  Large offline speech recognition models
 models/vosk-en/**
 models/vosk-ru/**
+models/**/*.zip
 
-# Python cache
+#  Saved lesson logs and outputs
+outputs/
+*.wav
+*.pcm
+
+# Python cache & compiled files
 __pycache__/
-*.py[cod]
+*.pyc
+*.pyo
+*.pyd
 
-# Virtual environments
+#  Virtual environment folders
 venv/
-ENV/
 env/
+ENV/
 
-# OS files
+#  OS-generated temporary/system files
 .DS_Store
 Thumbs.db
-
-# Logs and debug
-*.log
-logs/
+desktop.ini
