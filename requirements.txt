@@ -1,0 +1,10 @@
+torch>=2.1.0
+numpy>=1.22.0
+pandas>=2.0.0
+transformers>=4.36.0
+accelerate>=0.25.0
+bitsandbytes>=0.41.0
+vosk>=0.3.45
+sounddevice>=0.4.6
+pyaudio>=0.2.13
+requests>=2.31.0

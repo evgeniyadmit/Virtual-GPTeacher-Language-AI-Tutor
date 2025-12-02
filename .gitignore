@@ -1,0 +1,23 @@
+# Environment variables
+.env
+
+# Vosk acoustic models (large binary files)
+models/vosk-en/**
+models/vosk-ru/**
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and debug
+*.log
+logs/
