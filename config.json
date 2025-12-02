@@ -1,21 +1,10 @@
 {
-  "bot_type": "chatgpt",
-  "role_or_task": "Imagine that you are an English teacher and the user is your student. Communicate in the chosen lesson format and provide friendly, structured feedback.",
-  "lesson_type": "dialogue_on_topic",
-  "dialogue_on_topic_prompt": "Let’s speak English! Today’s topic is:",
-  "questions_on_text_prompt": "Ask me sequential questions in English about the text below:",
-  "topic_of_dialogue": "Travel to Kamchatka",
-  "text_for_questions": "A Journey Under the Sea.",
-  "assistant_voice": "en-US-female-1",
-  "silence_timeout_sec": 30,
-  "auto_reset_message": {
-    "ru": "Новый чат, продолжим урок!",
-    "en": "New chat started, let’s continue the lesson!"
-  },
-  "save_lesson_to_file": true,
-  "languages_supported": [
-    "ru", "en", "es", "de", "fr", "it", "nl", "pl", "tr", "sv", "fi", "pt-BR"
-  ],
-  "version": "prototype-legacy-voice",
-  "notes": "This configuration is for a portfolio prototype. Current APIs or voices may differ from those used at original development time."
+"bot_type": "chatgpt",
+"role_or_task": "Imagine that you are an English teacher, and I am your student. ",
+"lesson_type": "dialogue_on the_topic",
+"dialogue_on_the_topic": "Let's talk in English on the topic: ",
+"questions_on_the_text": "Ask me questions about the text in English, sequentially, one question after another, here is the text: ",
+"topic_of_dialogue": "Travel to Kamchatka",
+"text_for_questions": "A Journey Under the Sea. Recently, my wife and I came upon an advertisement in a travel magazine for an international...",
+"save_lesson_to_file": "true"
 }
