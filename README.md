@@ -417,51 +417,31 @@ All parameters are loaded at startup and define:
 <img width="1629" height="292" alt="image" src="https://github.com/user-attachments/assets/b885d532-849f-4030-b7c1-a1ccf5423b0c" />
 
 
- • bot_type – LLM provider identifier
- 
- • e.g. "gpt", "gigachat", "yandexgpt"
- 
- • role_or_task – system prompt that defines the assistant’s role
- 
- • e.g. "Imagine you are an English teacher and the user is your student..."
- 
- • lesson_type – active lesson format
- 
- • supported values:
- 
- • "dialogue_on_topic" – structured dialogue on a given topic
- 
- • "questions_on_text" – sequential questions about a provided text
- 
- • topic_of_dialogue – topic of the dialogue
- 
- • e.g. "Museum of the Future in Dubai"
- 
- • text_for_questions – source text used for question-based lessons
- 
- • e.g. a short article or story in English
- 
- • assistant_voice – TTS voice preset
- 
- • e.g. "zahar", "john" (mapped to Yandex SpeechKit voices)
- 
- • silence_timeout_sec – silence timeout in seconds
- 
- • after this period of no speech the current chat session is reset
- 
- • auto_reset_message – message spoken when a new chat is started
- 
- • e.g. "New chat started, let’s continue the lesson!"
- 
- •save_lesson_to_file – whether to log the lesson to a text file for later analysis
- 
- • true / false
- 
- • languages_supported – list of supported language codes
+ • bot_type — specifies the language model or LLM provider used by the assistant
+(legacy version focused on ChatGPT 4.0 or GigaChat-Pro, can now be replaced with other cloud-based LLMs)
 
- • e.g. ["ru", "en", "es", "de", "fr", "it", "nl", "pl", "tr", "sv", "fi", "pt-BR"]
+ • role_or_task — defines the assistant’s role during the lesson
+(e.g., English teacher. The system supports 12+ language teaching roles provided via prompt instructions)
+
+ • lesson_type — determines the format of the language practice
+ 
+Currently supported modes:
+
+ • dialogue_on_topic — natural conversation based on a given topic
+ 
+ • questions_on_text — sequential questions generated from a learning text
+ 
+ • topic_of_dialogue — the topic used when the lesson is in dialogue_on_topic mode
+(provided by the user before or during session activation)
+
+ • text_for_questions — the study text used to generate questions in questions_on_text mode
+(ignored if the lesson is not text-based)
+
+ • save_lesson_to_file — enables or disables lesson logging to a file
+(if true → a lesson log is created for later error analysis and progress review)
 
 ⸻
+
 
 🗂 **Required Dependencies**
 
