@@ -324,13 +324,13 @@ Pedagogical evaluation experience builts-in
 
 *Processing pipeline*
 
- 1. 🎤 *Audio Input (Microphone Stream Capture)*
+ 1.  **Audio Input (Microphone Stream Capture)**
  
  • Audio is captured using sounddevice.RawInputStream
  
  • Format: 16-bit int16, 1 channel, 8000 frame buffer
  
- 2. 🗣 *Speech-to-Text (Offline, Local)*
+ 2.  **Speech-to-Text (Offline, Local)**
  
  • Speech is recognized using local acoustic models from Vosk Community
  
@@ -338,19 +338,19 @@ Pedagogical evaluation experience builts-in
  
  • English and Russian language models are supported
  
- 3. 🧠 *LLM Response Generation (Cloud)*
+ 3.  **LLM Response Generation (Cloud)**
  
  • Responses were generated using an early version of GigaChat
  
  • Dialogue was stored in a payload.messages.append(role=USER/ASSISTANT) chain
 
- 4. 🔊 *Text-to-Speech (TTS Voice Synthesis)*
+ 4.  **Text-to-Speech (TTS Voice Synthesis)**
 
  • LLM reply text is converted to audio using Yandex SpeechKit
  
  • Output format: lpcm played via PyAudio stream
  
- 5. ⏳ *Session Control & Auto-Reset*
+ 5.  **Session Control & Auto-Reset**
  
  • The assistant “wakes up” using naïve substring intent detection (any(start in data))
  
@@ -363,13 +363,13 @@ Pedagogical evaluation experience builts-in
 
 ⚙️ **Core Technical Design Choices**
 
-1. 🎤 Wake-Up Intent Imitation (No NLU Model)
+1. 🎤**Wake-Up Intent Imitation (No NLU Model)**
 
 start_chat_msgs = ["давай поговорим", "let's talk", "hablamos?", "parliamo?"]
 
 A fast, model-free wake-word intent simulation.
 
-2. 🧩 Multilingual Triggering via Sub-String Matching
+2. 🧩 **Multilingual Triggering via Sub-String Matching**
 
 if any(msg in data for msg in start_chat_msgs)
 
@@ -377,7 +377,7 @@ if any(msg in data for msg in start_chat_msgs)
 
 ⚠ Not reliable for production (false positives)
 
-3. 🧠 In-Context Dialogue Memory
+3. 🧠 **In-Context Dialogue Memory**
 
 payload.messages.append(Messages(role=USER, content=data))
 
@@ -385,7 +385,7 @@ payload.messages.append(message_from_assistant)
 
 A lightweight chat memory stored directly in the prompt.
 
-4. ⏳ Chat Reset Timer
+4. ⏳ **Chat Reset Timer**
 
 if end - start > 30:
 
