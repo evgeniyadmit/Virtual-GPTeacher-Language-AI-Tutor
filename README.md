@@ -50,7 +50,9 @@ GPTeacher — это исследовательский прототип гол�
 
 🧠 **Техническая архитектура**
 
-<img width="1206" height="436" alt="image" src="https://github.com/user-attachments/assets/9bcf235a-17a4-4be0-9a37-31ab4fd6bc6e" />
+
+<img width="1206" height="436" alt="image" src="https://github.com/user-attachments/assets/5b46a163-340b-47b4-a9f1-532bd079bd85" />
+
 
 
 
@@ -317,7 +319,9 @@ Pedagogical evaluation experience builts-in
 
 🧠 **Technical Architecture**
 
-<img width="1206" height="436" alt="image" src="https://github.com/user-attachments/assets/9bcf235a-17a4-4be0-9a37-31ab4fd6bc6e" />
+
+<img width="1206" height="436" alt="image" src="https://github.com/user-attachments/assets/9287f923-2a4f-4b15-ae5d-0f571e9fb578" />
+
 
 *Processing pipeline*
 
