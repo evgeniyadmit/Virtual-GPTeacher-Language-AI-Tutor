@@ -20,6 +20,27 @@ oauth_token = "your_token"
 catalog_id = "your_catalod_id"
 gigachat_creds = 'your_creds'
 
+'''
+# If you want to add config.json
+# =================== Load configuration ===================
+with open("config.json", "r", encoding="utf-8") as f:
+    cfg = json.load(f)
+
+print("Config loaded:", cfg)
+
+# Забираем параметры
+bot_type = cfg.get("bot_type", "chatgpt")
+role_or_task = cfg.get("role_or_task", "english_teacher")
+lesson_type = cfg.get("lesson_type", "dialogue_on_topic")
+topic_of_dialogue = cfg.get("topic_of_dialogue", "")
+text_for_questions = cfg.get("text_for_questions", "")
+save_lesson = cfg.get("save_lesson_to_file", False)
+
+# Пути из конфига для Vosk моделей
+vosk_ru = cfg.get("vosk_model_ru_path", "models/vosk-ru")
+vosk_en = cfg.get("vosk_model_en_path", "models/vosk-en")
+'''
+
 # ============================= vosk ===============================
 q = queue.Queue()
 
@@ -151,5 +172,6 @@ try:
 
 except KeyboardInterrupt:
     print('\nDone')
+
 
 
