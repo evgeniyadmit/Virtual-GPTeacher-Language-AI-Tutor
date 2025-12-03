@@ -529,7 +529,7 @@ Me on Telegram: https://t.me/angel_eugeniya
 
 eugeniya.dm@gmail.com
 
-
+> This repository is hosted under a neutral GitHub organization for portfolio preservation and contribution tracking. It does not reflect employer affiliation.
 
 
 
