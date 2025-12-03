@@ -87,7 +87,7 @@ giga = GigaChat(credentials=gigachat_creds, verify_ssl_certs=False, model="GigaC
 # ===================================================================
 
 try:
-    model = vosk.Model(r"C:\Users\Lenovo\Downloads\GPTeacher\vosk-model-ru")
+    model = vosk.Model(r"C:\your_path\vosk-model-ru")
     with sd.RawInputStream(samplerate=samplerate, blocksize=8000, device=dev_id, dtype='int16', channels=1, callback=(lambda i, f, t, s: q.put(bytes(i)))):
         rec = vosk.KaldiRecognizer(model, samplerate)
 
@@ -103,7 +103,7 @@ try:
                             chat = True
                             if english in data:
                                 voice = english_voice
-                                model = vosk.Model(r"C:\Users\Lenovo\Downloads\GPTeacher\vosk-model-en")
+                                model = vosk.Model(r"C:\your_path\vosk-model-en")
                                 with sd.RawInputStream(samplerate=samplerate, blocksize=8000, device=dev_id, dtype='int16', channels=1, callback=(lambda i, f, t, s: q.put(bytes(i)))):
                                     rec = vosk.KaldiRecognizer(model, samplerate)
                                 audio_data = synthesizeAudio.synthesize_stream(
@@ -151,4 +151,5 @@ try:
 
 except KeyboardInterrupt:
     print('\nDone')
+
 
