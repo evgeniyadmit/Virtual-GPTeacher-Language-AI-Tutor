@@ -174,34 +174,6 @@ config.json управляет поведением ассистента, фор
 
 ⸻
 
-
-🗂 **Какие зависимости нужны для запуска**
-
-requirements.txt
-
-torch>=2.1.0
-
-numpy>=1.22.0
-
-pandas>=2.0.0
-
-transformers>=4.36.0
-
-accelerate>=0.25.0
-
-bitsandbytes>=0.41.0
-
-vosk>=0.3.45
-
-sounddevice>=0.4.6
-
-pyaudio>=0.2.13
-
-requests>=2.31.0
-
-
-⸻
-
 💾 **Как запускать локально**
 
 1. Клонировать репозиторий
@@ -439,33 +411,6 @@ Currently supported modes:
 
  • save_lesson_to_file — enables or disables lesson logging to a file
 (if true → a lesson log is created for later error analysis and progress review)
-
-⸻
-
-
-🗂 **Required Dependencies**
-
-requirements.txt
-
-torch>=2.0.0
-
-numpy>=1.22.0
-
-pandas>=2.0.0
-
-transformers>=4.36.0
-
-accelerate>=0.25.0
-
-bitsandbytes>=0.41.0
-
-vosk>=0.3.45
-
-sounddevice>=0.4.6
-
-pyaudio>=0.2.13
-
-requests>=2.31.0
 
 
 ⸻
